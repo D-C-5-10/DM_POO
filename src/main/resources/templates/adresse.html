@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/Fragements/Head.html"></head>
+
+<div th:replace="/Fragements/Nav :: nav3"></div>
+<body class=container>
+<h1>Formulaire SEARCH ADDRESS</h1>
+<form action="/meteo" method="POST">
+    Saisissez l'adresse :
+    <input name="query" type="text" />
+    <input type="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/Fragements/Head.html"></head>
+<div th:replace="/Fragements/Nav :: nav3"></div>
+<body class=container>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Adresse demandée</th>
+        <th scope="col">Lat</th>
+        <th scope="col">Lon</th>
+        <th scope="col">Prévision météo</th>
+        <th scope="col">Température(°C) </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">
+            <p th:text="${query}" />
+        </th>
+        <td>
+            <p th:text="${gps_x}" />
+        </td>
+        <td>
+            <p th:text="${gps_y}" />
+        </td>
+        <td>
+            <p th:text="${prevision}" />
+        </td>
+        <td>
+            <p th:text="${temperature}" />
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
